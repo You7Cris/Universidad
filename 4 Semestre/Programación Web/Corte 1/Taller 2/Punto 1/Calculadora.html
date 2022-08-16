@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculador</title>
+
+	<link rel="stylesheet" type="text/css" src="css/bootstrap.css">
+</head>
+<body>
+<center><h1>Calculadora</h1></center>
+	<center>
+	<form action="calculadora.php" method="POST">
+		<label>Numero 1</label>
+		<input type="number" name="num1" class="numero1" required="">
+		<br><br>
+		<label>Operación</label>
+		<select name="operacion" id ="operacion">
+			<option value="1">Suma</option>
+			<option value="2">Resta</option>
+			<option value="3">Multiplicación</option>
+			<option value="4">División</option>
+			<option value="5">Porcentaje</option>
+			<option value="6">Potencia</option>
+			<option value="7">Raiz Cuadrada</option>
+			<option value="8">Logaritmo</option>
+		</select>
+		<br><br>
+		<label>Numero 2</label>
+		<input type="number" name="num2" class="numero2" >
+		<br><br>
+		<input type="submit" value="Calcular">
+	</form>
+</center>
+</body>
+
+<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function () {
+  $("#operacion").on("change", function () {
+    $("#operacion").each(function () {
+      var operacion = $('#operacion').val();
+
+      if(operacion == 7){
+        $('.numero2').css('display','none');
+      }else{
+      	$('.numero1').css('display','inline');
+        $('.numero2').css('display','inline');
+      }
+    });
+  });
+
+});
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Fracciones</title>
+</head>
+<body>
+	<center>
+		<h1>Calcular Fracciones</h1>
+	</center>
+	<form action="index.php" method="POST">
+		<label>Ingrese la fraccion 1</label>
+		<input type="number" name="a" class="a"  required>
+		<label>/</label>
+		<input type="number" name="b" class="b" min="1" max="1000" required>
+		<br><br>
+		<label>Operacion</label>
+		<select class="operacion" name="operacion" id="operacion" onchange="habilitar(this);">
+			<option value="1">Suma</option>
+			<option value="2">Resta</option>
+			<option value="3">Multiplicacion</option>
+			<option value="4">Division</option>
+			<option value="5">Potencia</option>
+			<option value="6">Raiz Cuadrada</option>
+		</select>
+		<label>Numero Potencia</label>
+		<input type="number" name="numero" class="numero" id="numero" readonly>
+		<br><br>
+		<label>Ingrese la fraccion 2</label>
+		<input type="number" name="c" class="c" id ="c" required >
+		<label>/</label>
+		<input type="number" name="d" class="d" id="d" min="1" max="1000" required >
+		<br><br>
+		<center>
+		<input type="submit" name="calcular" value="Calcular">
+	</center>
+	</form>
+
+</body>
+<script>
+	function habilitar(selec){
+		if(selec.value == 5 || selec.value == 6)
+		{
+			if (selec.value == 5) 
+			{
+				document.getElementById('numero').readOnly = false;
+				document.getElementById('c').readOnly = true;
+				document.getElementById('d').readOnly = true;
+			}else
+			{
+				document.getElementById('numero').readOnly = true;
+				document.getElementById('c').readOnly= true;
+				document.getElementById('d').readOnly = true;
+			}
+		}else{
+			document.getElementById('numero').readOnly = true;
+			document.getElementById('c').readOnly = false;
+			document.getElementById('d').readOnly = false;
+		}
+
+		
+		
+	}
+</script>
+</html>

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1526497054 source:c:\users\cristian gonzalez\documents\talleres programacion\proyectofinal3corte\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+

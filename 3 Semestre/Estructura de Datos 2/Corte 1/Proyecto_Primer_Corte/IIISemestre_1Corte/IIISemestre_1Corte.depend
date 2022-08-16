@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1520380421 source:c:\users\crist\desktop\proyectos\iiisemestre_1corte\main.cpp
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<stdlib.h>
+	<math.h>
+	<memory>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Convertidor de Bytes</title>
+</head>
+<body>
+	<center>
+		<h1>Convertidor</h1>
+	</center>
+	<form action="index.php" method="POST">
+		<center>
+			<br><br>
+			<label>Unidades</label>
+			<input type="number" name="valor" class="valor" required>
+			<br><br>
+			<label>Valor de origen</label>
+			<select class="origen" id="origen" name="origen" required>
+				<option value="1">bit</option>
+				<option value="2">byte</option>
+				<option value="3">kilobyte</option>
+				<option value="4">megabyte</option>
+				<option value="5">gigabyte</option>
+				<option value="6">terabyte</option>
+			</select>
+			<br><br>
+			<label>Unidad Destino</label>
+			<select class="destino" id="destino" name="destino" required >
+				<option value="1">bit</option>
+				<option value="2">byte</option>
+				<option value="3">kilobyte</option>
+				<option value="4">megabyte</option>
+				<option value="5">gigabyte</option>
+				<option value="6">terabyte</option>
+			</select>
+			<br><br>
+			<input type="submit" name="Calcular" value="Calcular">
+		</center>
+
+		
+	</form>
+
+</body>
+</html>

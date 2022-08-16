@@ -1,0 +1,5 @@
+C:\Users\crist\Desktop\Shardevelop\Cristian\obj\Debug\Cristian.csprojResolveAssemblyReference.cache
+C:\Users\crist\Desktop\Shardevelop\Cristian\bin\Debug\Cristian.exe
+C:\Users\crist\Desktop\Shardevelop\Cristian\bin\Debug\Cristian.pdb
+C:\Users\crist\Desktop\Shardevelop\Cristian\obj\Debug\Cristian.exe
+C:\Users\crist\Desktop\Shardevelop\Cristian\obj\Debug\Cristian.pdb

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1519769855 source:c:\users\crist\desktop\proyectos\taller_no2cris\main.cpp
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	<math.h>
+	<string>
+
